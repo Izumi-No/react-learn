@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 function App() {
-	const [load,setLoad] = useState(false)
 	const [test, setTest] = useState(undefined)
 
   return (
     <>
-			<input />
-			<h1>{test}algo</h1>
+			<input onChange={(e)=>{setTest(e.target.value)}}/>
+			<h1>{test}</h1>
 		</>
   );
 }
