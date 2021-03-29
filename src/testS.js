@@ -1,8 +1,9 @@
-// globalStyles.js
+
 import { createGlobalStyle } from 'styled-components';
  
-const GlobalStyle = createGlobalStyle`
-  body {
+const GlobalStyle = createGlobalStyle`  
+
+body {
     margin: 0;
     padding: 0;
 		min-height:100vh;
@@ -22,20 +23,30 @@ const GlobalStyle = createGlobalStyle`
 		width:300px;
 		height:30px;
 		border-radius:8px;
-		border: 2px solid rgba( 255, 255, 255, 0.25 );
+		border: 2px solid rgba( 255, 255, 255, 0.15 );
 		background: linear-gradient(115deg, rgba(255,255,255,0.5), rgba(255,255,255,0.2));
 		backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
-		box-shadow: 0 8px 16px 0 rgba( 31, 38, 135, 0.37 );
+		box-shadow: 8px 10px 24px 0 rgba( 10, 10, 10, 0.3 );
 	outline:none;
 	transition: all 0.35s ease;
 
-	}&:placeholder{
-		
 	}
 	&:focus{
 		border:2px solid rgba(179,137,239,0.75);
-		transition: all 0.35s ease;
+		box-shadow: 
+		0 10px 24px 0 rgba( 10, 10, 10, 0.3 ),
+		0 0 10px 0 rgba(179,137,239,0.5);
+		
+		
+	}
+	h1{
+		
+		color: transparent;
+		background: linear-gradient(115deg, #10002b, #c19ee0);
+		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+		text-shadow: 4px 4px 7px rgba(10, 10, 10, 0.4);
 	}
 
 	@keyframes anim{
