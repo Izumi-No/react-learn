@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-			<input onChange={(e)=>{setTest(e.target.value)}}/>
+			<input placeholder="Escreva Algo" onChange={(e)=>{setTest(e.target.value)}}/>
 			<h1>{test}</h1>
 		</>
   );

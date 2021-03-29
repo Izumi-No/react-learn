@@ -30,6 +30,8 @@ const GlobalStyle = createGlobalStyle`
 	outline:none;
 	transition: all 0.35s ease;
 
+	}&:placeholder{
+		
 	}
 	&:focus{
 		border:2px solid rgba(179,137,239,0.75);
