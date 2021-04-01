@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Style = styled.button`
     position:fixed;
-    right:Calc(100% - 110px); bottom:Calc(100% - 60px);
+    top:5px;
+    left:5px;
     color:rgb(117, 117, 117);
     width: 100px;
     height: 50px;
